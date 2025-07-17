@@ -77,6 +77,29 @@
   flex: 1;
   min-width: 200px;
 }
+    nav {
+  background: #333;
+  padding: 1rem;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu li a:hover {
+  text-decoration: underline;
+}
   </style>
 </head>
 <body>
@@ -84,6 +107,15 @@
     <h1>Jesús López Angulo</h1>
     <p>Community Ecology</p>
   </header>
+  <nav>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="resources.html">Resources</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 
   <main>
     <div class="presentacion">
