@@ -59,12 +59,25 @@
       color: #777;
     }
     .presentacion {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap; /* Para que se adapte en móviles */
-}
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 600px) {
+    .presentacion {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .presentacion img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+    }
+  }
 
 .foto-perfil {
   width: 180px;
