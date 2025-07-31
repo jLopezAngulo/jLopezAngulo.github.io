@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <title>Jesús López Angulo - Press Release</title>
-   <style> 
-  body {
+  <style>
+    body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #f4f4f4;
@@ -58,87 +56,95 @@
       font-size: 0.9rem;
       color: #777;
     }
-    .presentacion {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
-    flex-wrap: wrap;
-  }
 
-  @media (max-width: 600px) {
     .presentacion {
-      flex-direction: column;
-      align-items: flex-start;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
     }
 
-    .presentacion img {
-      width: 100%;
-      max-width: 300px;
-      height: auto;
+    @media (max-width: 600px) {
+      .presentacion {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .presentacion img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+      }
     }
-  }
 
-.foto-perfil {
-  width: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-}
+    .foto-perfil {
+      width: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
 
-.texto-presentacion {
-  flex: 1;
-  min-width: 200px;
-}
+    .texto-presentacion {
+      flex: 1;
+      min-width: 200px;
+    }
+
     nav {
-  background: #333;
-  padding: 1rem;
-}
+      background: #333;
+      padding: 1rem;
+    }
 
-.menu {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-}
+    .menu {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
 
-.menu li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
+    .menu li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-.menu li a:hover {
-  text-decoration: underline;
-}
-<style>
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 20px;
-}
-.team-member {
-  text-align: center;
-}
-.team-member img {
+    .menu li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Aquí empieza el CSS para el team grid 2 columnas */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .team-member {
+      text-align: center;
+    }
+
+    .team-member img {
   width: 100%;
-  max-width: 160px;
+  max-width: 120px;
   height: auto;
   border-radius: 8px;
 }
-.team-member p {
-  margin-top: 10px;
-  font-size: 14px;
-}
-.team-member small {
-  color: #666;
-  font-size: 12px;
-}
-</style>
 
+    .team-member p {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .team-member small {
+      color: #666;
+      font-size: 12px;
+    }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Jesús López Angulo</h1>
@@ -157,49 +163,45 @@
   </nav>
 
   <main>
-    <h1>Rsearch Team</h1>
-<div class="team-grid">
-  <div class="team-member">
-    <img src="images/team/Alejandro Muñoz-Escribano (Assistant researcher 2022-2023).jpg" alt="Alejandro Muñoz-Escribano">
-    <p>Alejandro Muñoz-Escribano<br><small>Assistant researcher 2022–2023</small></p>
-  </div>
+  <h1>Research Team</h1>
+  <div class="team-grid">
+    <div class="team-member">
+      <img src="images/team/Clara Rodríguez Arribas (Postdoctoral researcher).jpeg" alt="Clara Rodríguez Arribas">
+      <p>Clara Rodríguez Arribas<br><small>Postdoctoral researcher</small></p>
+    </div>
+    <div class="team-member">
+      <img src="images/team/Tuany Siqueira-Silva (PhD student 2025-Present).jpg" alt="Tuany Siqueira-Silva">
+      <p>Tuany Siqueira-Silva<br><small>PhD student 2025–Present</small></p>
+    </div>
 
-  <div class="team-member">
-    <img src="images/team/Clara Rodríguez Arribas (Postdoctoral researcher).jpeg" alt="Clara Rodríguez Arribas">
-    <p>Clara Rodríguez Arribas<br><small>Postdoctoral researcher</small></p>
-  </div>
+    <div class="team-member">
+      <img src="images/team/Zeinab Matinzadeh (Postdoctoral researcher 2025).jpg" alt="Zeinab Matinzadeh">
+      <p>Zeinab Matinzadeh<br><small>Postdoctoral researcher 2025</small></p>
+    </div>
+    <div class="team-member">
+      <img src="images/team/Alejandro Muñoz-Escribano (Assistant researcher 2022-2023).jpg" alt="Alejandro Muñoz-Escribano">
+      <p>Alejandro Muñoz-Escribano<br><small>Assistant researcher 2022–2023</small></p>
+    </div>
 
-  <div class="team-member">
-    <img src="images/team/Gonzalo Díez Blázquez (Technician 2021).jpeg" alt="Gonzalo Díez Blázquez">
-    <p>Gonzalo Díez Blázquez<br><small>Technician 2021</small></p>
-  </div>
+    <div class="team-member">
+      <img src="images/team/Mario Sánchez Lozano (Technician 2022).jpg" alt="Mario Sánchez Lozano">
+      <p>Mario Sánchez Lozano<br><small>Technician 2022</small></p>
+    </div>
+    <div class="team-member">
+      <img src="images/team/Rubén García Sánchez (Technician 2022).jpeg" alt="Rubén García Sánchez">
+      <p>Rubén García Sánchez<br><small>Technician 2022</small></p>
+    </div>
 
-  <div class="team-member">
-    <img src="images/team/Mario Sánchez Lozano (Technician 2022).jpg" alt="Mario Sánchez Lozano">
-    <p>Mario Sánchez Lozano<br><small>Technician 2022</small></p>
+    <div class="team-member">
+      <img src="images/team/Sandra Hernández (Technician 2022).jpg" alt="Sandra Hernández">
+      <p>Sandra Hernández<br><small>Technician 2022</small></p>
+    </div>
+    <div class="team-member">
+      <img src="images/team/Gonzalo Díez Blázquez (Technician 2021).jpeg" alt="Gonzalo Díez Blázquez">
+      <p>Gonzalo Díez Blázquez<br><small>Technician 2021</small></p>
+    </div>
   </div>
+</main>
 
-  <div class="team-member">
-    <img src="images/team/Rubén García Sánchez (Technician 2022).jpeg" alt="Rubén García Sánchez">
-    <p>Rubén García Sánchez<br><small>Technician 2022</small></p>
-  </div>
-
-  <div class="team-member">
-    <img src="images/team/Sandra Hernández (Technician 2022).jpg" alt="Sandra Hernández">
-    <p>Sandra Hernández<br><small>Technician 2022</small></p>
-  </div>
-
-  <div class="team-member">
-    <img src="images/team/Tuany Siqueira-Silva (PhD student 2025-Present).jpg" alt="Tuany Siqueira-Silva">
-    <p>Tuany Siqueira-Silva<br><small>PhD student 2025–Present</small></p>
-  </div>
-
-  <div class="team-member">
-    <img src="images/team/Zeinab Matinzadeh (Postdoctoral researcher 2025).jpg" alt="Zeinab Matinzadeh">
-    <p>Zeinab Matinzadeh<br><small>Postdoctoral researcher 2025</small></p>
-  </div>
-</div>
-
-    </main>
 </body>
 </html>

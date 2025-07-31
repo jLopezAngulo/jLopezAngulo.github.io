@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jesús López Angulo - Publications</title>
   <style>
     body {
@@ -40,12 +40,14 @@
       gap: 2rem;
       margin: 0;
       padding: 0;
+      flex-wrap: wrap;
     }
 
     .menu li a {
       color: white;
       text-decoration: none;
       font-weight: bold;
+      white-space: nowrap;
     }
 
     .menu li a:hover {
@@ -105,26 +107,28 @@
       font-size: 0.9rem;
       color: #777;
     }
-  .presentacion {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
-    flex-wrap: wrap;
-  }
 
-  @media (max-width: 600px) {
     .presentacion {
-      flex-direction: column;
-      align-items: flex-start;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
     }
 
-    .presentacion img {
-      width: 100%;
-      max-width: 300px;
-      height: auto;
+    /* Menú responsive para móviles */
+    @media (max-width: 600px) {
+      .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 0;
+      }
+      .menu li {
+        width: 100%;
+        text-align: center;
+      }
     }
-  }
   </style>
 </head>
 <body>
@@ -132,7 +136,6 @@
     <h1>Jesús López Angulo</h1>
     <p>Community Ecology</p>
   </header>
-
   <nav>
     <ul class="menu">
       <li><a href="home.html">Home</a></li>
@@ -198,9 +201,9 @@
 
 <h2>Other scientific contributions</h2>
     <div class="article">1. <strong>López-Angulo, J.</strong>, Conde-Raposo, E., Rojo-Valencia, M., et al., García-Cervigón, A. (2025). Key structural attributes of Mediterranean reforestations for avian diversity conservation: Comparisons with mature forests. SSRN. <a href="https://doi.org/10.2139/ssrn.5369625" target="_blank" rel="noopener noreferrer">https://doi.org/10.2139/ssrn.5369625</a></div>
-    <div class="article">2. Tamburrino, Í., Robles, V., Arancio, P. J., et al., Kalin-Arroyo, M. T. (2024). Phylogenetic signal in flowering phenology weakens over elevation in the high Andes of Chile: Evidence for evolutionary convergence in a harsh habitat. ESS Open Archive, 36, 03600016.</div>
-    <div class="article">3. <strong>López-Angulo, J.</strong>, et al., Escudero, A. (2018). Reglas ecológicas de ensamblaje en comunidades de plantas de alta montaña. Universidad Rey Juan Carlos.</div>
-
+    <div class="article">2. Tamburrino, Í., Robles, V., Arancio, P. J., et al., Kalin-Arroyo, M. T. (2024). Phylogenetic signal in flowering phenology weakens over elevation in the high Andes of Chile: Evidence for evolutionary convergence in a harsh habitat. ESS Open Archive, 36, 03600016.<a href="https://doi.org/10.22541/au.172114600.03600016/v1" target="_blank" rel="noopener noreferrer">https://doi.org/10.22541/au.172114600.03600016/v1</a></div>
+    <div class="article">3. <strong>López-Angulo, J.</strong>, et al., Escudero, A. (2018). Reglas ecológicas de ensamblaje en comunidades de plantas de alta montaña. Universidad Rey Juan Carlos. 
+      <a href="documents/López-Angulo - 2018.pdf" target="_blank" rel="noopener noreferrer">[PDF]</a></div>
 <h2>Electronic book</h2>
 <ul>
 <li>
