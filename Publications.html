@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jesús López Angulo - Publications</title>
   <style>
     body {
@@ -40,14 +40,12 @@
       gap: 2rem;
       margin: 0;
       padding: 0;
-      flex-wrap: wrap;
     }
 
     .menu li a {
       color: white;
       text-decoration: none;
       font-weight: bold;
-      white-space: nowrap;
     }
 
     .menu li a:hover {
@@ -107,28 +105,38 @@
       font-size: 0.9rem;
       color: #777;
     }
+  .presentacion {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap; /* Para móviles */
+}
 
-    .presentacion {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-      margin-bottom: 2rem;
-      flex-wrap: wrap;
-    }
+.foto-perfil {
+  width: 180px;       /* ancho fijo para controlar tamaño */
+  border-radius: 50%;
+  object-fit: cover;  /* que la imagen no se deforme */
+  height: 180px;      /* para que mantenga proporción */
+}
 
-    /* Menú responsive para móviles */
-    @media (max-width: 600px) {
-      .menu {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        padding: 0;
-      }
-      .menu li {
-        width: 100%;
-        text-align: center;
-      }
-    }
+.texto-presentacion {
+  flex: 1;
+  min-width: 200px;   /* evita que el texto se haga muy pequeño */
+}
+
+/* Mantén media query para que en pantallas chicas se vea bien */
+@media (max-width: 600px) {
+  .presentacion {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .foto-perfil {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+}
   </style>
 </head>
 <body>
