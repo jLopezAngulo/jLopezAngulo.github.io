@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Jesús López Angulo - Home</title>
+  <meta charset="UTF-8" />
+  <title>Jesús López Angulo - Outreach </title>
   <style>
-     body {
+    body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #f4f4f4;
@@ -58,109 +56,96 @@
       font-size: 0.9rem;
       color: #777;
     }
+
     .presentacion {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap; /* Para que se adapte en móviles */
-}
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
 
-.foto-perfil {
-  width: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-}
+    @media (max-width: 600px) {
+      .presentacion {
+        flex-direction: column;
+        align-items: flex-start;
+      }
 
-.texto-presentacion {
-  flex: 1;
-  min-width: 200px;
-}
+      .presentacion img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+      }
+    }
+
+    .foto-perfil {
+      width: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .texto-presentacion {
+      flex: 1;
+      min-width: 200px;
+    }
+
     nav {
-  background: #333;
-  padding: 1rem;
+      background: #333;
+      padding: 1rem;
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Aquí empieza el CSS para el team grid 2 columnas */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .team-member {
+      text-align: center;
+    }
+
+    .team-member img {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  border-radius: 8px;
 }
 
-.menu {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-}
+    .team-member p {
+      margin-top: 10px;
+      font-size: 14px;
+    }
 
-.menu li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.menu li a:hover {
-  text-decoration: underline;
-}
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 1.8rem;
-  }
-
-  header p {
-    font-size: 1rem;
-  }
-
-  .menu {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    gap: 1rem;
-    justify-content: flex-start;
-    padding: 0.5rem 0.5rem;
-    scrollbar-width: none;
-  }
-
-  .menu::-webkit-scrollbar {
-    display: none;
-  }
-
-  .menu li a {
-    font-size: 0.85rem;
-    white-space: nowrap;
-  }
-
-  main {
-    padding: 1rem;
-    margin: 1rem;
-  }
-
-  main h1 {
-    font-size: 1.6rem;
-  }
-
-  main h2 {
-    font-size: 1.3rem;
-  }
-
-  main h3 {
-    font-size: 1.1rem;
-  }
-
-  .article {
-    font-size: 0.9rem;
-  }
-
-  p {
-    font-size: 0.9rem;
-    line-height: 1.4;
-  }
-}
-.article {
-  margin-bottom: 0.5em;
-  padding-left: 2.5em;
-  text-indent: -2.5em;
-  white-space: normal;
-  overflow-wrap: break-word;
-}
+    .team-member small {
+      color: #666;
+      font-size: 12px;
+    }
   </style>
 </head>
+
+
 <body>
   <header>
     <h1>Jesús López Angulo</h1>
@@ -173,13 +158,87 @@
       <li><a href="Publications.html"> Publications </a></li>
       <li><a href="Databases.html">Databases</a></li>
       <li><a href="team.html">Team</a></li>
-      <li><a href="press-release.html">Press Release</a></li>
+      <li><a href="press-release.html">Outreach </a></li>
       <li><a href="index.html">Contact</a></li>
     </ul>
   </nav>
 
   <main>
-    <h1>Press Release</h1>
+ <h1>Outreach </h1>
+  <p style="max-width: 700px; line-height: 1.6;">
+   Alongside my research, I genuinely enjoy sharing ecology with a broad audience through media work, public talks, and educational activities, aiming to bring our scientific results closer to those who fund it, to the people making decisions on the land, and—above all—to stay connected with the real world beyond the lab.
+     </p>
+<!-- 1. MEDIA APPEARANCES -->
+<h3 style="margin-top: 2rem;">Media & public communication</h3>
+<h4> 2020</h4>
+<ul>
+  <li>
+    <strong>“Ecology during COVID in Spain”</strong> – Functional Ecologists Blog<br>
+    Reflections on ecological research during lockdown.<br>
+    <a href="https://functionalecologists.com/2020/06/08/ecology-during-covid-spain/" target="_blank">[Read article]</a>
+  </li>
+</ul>
+<img src="images/Outreach/media/blog_functional_ecology.png" alt="Blog post" style="width: 300px; margin-top: 0.5rem;">
+<hr>
+
+<h4> 2017</h4>
+<ul>
+  <li>
+    <strong>“Urban birds and ecosystem services”</strong> – Interview on Cadena Cope Madrid Sur 89.7 FM<br>
+    Talk on the importance of urban avifauna in ecosystem functioning.
+  </li>
+</ul>
+<img src="images/Outreach/media/radio.jpg" alt="Radio interview" style="width: 300px; margin-top: 0.5rem;">
+<hr>
+
+
+
+<h3 style="margin-top: 2rem;">Workshops and seminars</h3>
+
+<h4>2025</h4>
+<ul>
+  <li><strong>03/04</strong> — Biodiversidad en la Era Digital: Explorando la Naturaleza con Tecnología<br>
+    VIII Edición de Ciencia a la Carta</li>
+</ul>
+<img src="images/Outreach/seminars/2025.jpg" alt="Workshop 2025" style="width: 300px; margin-top: 0.5rem;">
+<hr>
+
+<h4>2022</h4>
+<ul>
+  <li><strong>28/03</strong> — Primera jornada de transferencia sobre el cultivo en mezcla<br>
+    Estación experimental Aprisco<br>
+    Hechos, retos y nuevas ideas!  
+    <a href="https://x.com/ApriscoC/status/1530325541810843649" target="_blank">[ tuit]</a>
+  </li>
+</ul>
+<img src="images/Outreach/seminars/2022.jpg" alt="Workshop 2022" style="width: 300px; margin-top: 0.5rem;">
+<hr>
+<h4>2019</h4>
+<ul>
+  <li><strong>17/11</strong> — Ciencia ciudadana: aves y mamíferos como indicadores ambientales<br>
+    XIX Semana de la Ciencia y la Innovación</li>
+  <li><strong>15/03</strong> — ¿Qué animales son nuestros vecinos? Taller de identificación de huellas y rastros<br>
+    III Edición de Ciencia a la Carta</li>
+</ul>
+<img src="images/Outreach/seminars/2019.jpg" alt="Workshop 2019" style="width: 300px; margin-top: 0.5rem;">
+<hr>
+
+<h4>2018</h4>
+<ul>
+  <li><strong>18/11</strong> — Ciencia ciudadana: aves y mamíferos como indicadores ambientales<br>
+    XVIII Semana de la Ciencia y la Innovación</li>
+</ul>
+<img src="images/Outreach/seminars/2018.jpg" alt="Workshop 2018" style="width: 300px; margin-top: 0.5rem;">
+<hr>
+
+<h4>2015</h4>
+<ul>
+  <li><strong>17/11</strong> — Biodiversidad en una gota de agua<br>
+    XIV Semana de la Ciencia</li>
+</ul>
+<img src="images/Outreach/seminars/2015.jpg" alt="Workshop 2015" style="width: 300px; margin-top: 0.5rem;">
+
+
     </main>
 </body>
  <footer>

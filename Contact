@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jesús López Angulo - Home</title>
   <style>
      body {
@@ -27,14 +28,12 @@
       margin: 0.5rem 0 0;
     }
 
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      background: white;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
+  main {
+  max-width: 100%;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
 
     .contacto {
       display: flex;
@@ -99,6 +98,7 @@
 .menu li a:hover {
   text-decoration: underline;
 }
+
 @media (max-width: 600px) {
   header h1 {
     font-size: 1.8rem;
@@ -152,6 +152,7 @@
     line-height: 1.4;
   }
 }
+
 .article {
   margin-bottom: 0.5em;
   padding-left: 2.5em;
@@ -166,9 +167,34 @@
     <h1>Jesús López Angulo</h1>
     <p>Community Ecology</p>
   </header>
-
+  <nav>
+  <ul class="menu">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="#publicaciones">Publicaciones</a></li>
+    <li><a href="#proyectos">Proyectos</a></li>
+    <li><a href="#divulgacion">Divulgación</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</nav>
   <main>
-    <h2>Contact</h2>
+   <main>
+  <section id="publicaciones">
+    <h2>Publicaciones</h2>
+    <!-- contenido -->
+  </section>
+
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+    <!-- contenido -->
+  </section>
+
+  <section id="divulgacion">
+    <h2>Divulgación</h2>
+    <!-- Aquí va todo lo que trabajamos antes -->
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
     <div class="contact">
       <p>Email: <a href="mailto:jesus.lopez.angulo@urjc.es">jesus.lopez.angulo@urjc.es</a></p>
       <p>GitHub: <a href="https://github.com/jLopezAngulo" target="_blank">github.com/jLopezAngulo</a></p>
