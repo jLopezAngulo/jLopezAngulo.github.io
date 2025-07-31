@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Jesús López Angulo - Press Release</title>
-   <style> 
-  body {
+  <meta charset="UTF-8">
+  <title>Jesús López Angulo - Home</title>
+  <style>
+     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #f4f4f4;
@@ -59,25 +59,12 @@
       color: #777;
     }
     .presentacion {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
-    flex-wrap: wrap;
-  }
-
-  @media (max-width: 600px) {
-    .presentacion {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .presentacion img {
-      width: 100%;
-      max-width: 300px;
-      height: auto;
-    }
-  }
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap; /* Para que se adapte en móviles */
+}
 
 .foto-perfil {
   width: 180px;
@@ -111,6 +98,66 @@
 
 .menu li a:hover {
   text-decoration: underline;
+}
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .menu {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 1rem;
+    justify-content: flex-start;
+    padding: 0.5rem 0.5rem;
+    scrollbar-width: none;
+  }
+
+  .menu::-webkit-scrollbar {
+    display: none;
+  }
+
+  .menu li a {
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+
+  main {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  main h1 {
+    font-size: 1.6rem;
+  }
+
+  main h2 {
+    font-size: 1.3rem;
+  }
+
+  main h3 {
+    font-size: 1.1rem;
+  }
+
+  .article {
+    font-size: 0.9rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+}
+.article {
+  margin-bottom: 0.5em;
+  padding-left: 2.5em;
+  text-indent: -2.5em;
+  white-space: normal;
+  overflow-wrap: break-word;
 }
   </style>
 </head>
