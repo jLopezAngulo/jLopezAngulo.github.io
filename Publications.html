@@ -36,8 +36,9 @@
     .menu {
       list-style: none;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      gap: 2rem;
+      gap: 1rem;
       margin: 0;
       padding: 0;
     }
@@ -46,6 +47,8 @@
       color: white;
       text-decoration: none;
       font-weight: bold;
+      padding: 0.5rem;
+      display: inline-block;
     }
 
     .menu li a:hover {
@@ -62,18 +65,13 @@
     }
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       margin-bottom: 1rem;
     }
 
     h2 {
-      font-size: 1.8rem;
+      font-size: 1.4rem;
       margin-top: 2rem;
-    }
-
-    h3 {
-      font-size: 1.3rem;
-      margin-top: 1.5rem;
     }
 
     ul {
@@ -94,9 +92,11 @@
     }
 
     .article {
-      padding-left: 2.5em;
-      text-indent: -2.5em;
-      margin-bottom: 0.5em;
+      padding-left: 2em;
+      text-indent: -2em;
+      margin-bottom: 0.8em;
+      font-size: 0.95em;
+      line-height: 1.4;
     }
 
     footer {
@@ -105,50 +105,44 @@
       font-size: 0.9rem;
       color: #777;
     }
-  .presentacion {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap; /* Para móviles */
-}
 
-.foto-perfil {
-  width: 180px;       /* ancho fijo para controlar tamaño */
-  border-radius: 50%;
-  object-fit: cover;  /* que la imagen no se deforme */
-  height: 180px;      /* para que mantenga proporción */
-}
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.95em;
+      }
 
-.texto-presentacion {
-  flex: 1;
-  min-width: 200px;   /* evita que el texto se haga muy pequeño */
-}
+      header h1 {
+        font-size: 2rem;
+      }
 
-/* Mantén media query para que en pantallas chicas se vea bien */
-@media (max-width: 600px) {
-  .presentacion {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .foto-perfil {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-  }
-}
+      main {
+        padding: 1rem;
+        margin: 1rem;
+      }
+
+      .menu {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .menu li {
+        margin: 0.5rem 0;
+      }
+    }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Jesús López Angulo</h1>
     <p>Community Ecology</p>
   </header>
+
   <nav>
     <ul class="menu">
       <li><a href="home.html">Home</a></li>
       <li><a href="research.html">Research</a></li>
-      <li><a href="Publications.html"> Publications </a></li>
+      <li><a href="Publications.html">Publications</a></li>
       <li><a href="Databases.html">Databases</a></li>
       <li><a href="team.html">Team</a></li>
       <li><a href="press-release.html">Press Release</a></li>
@@ -158,6 +152,7 @@
 
   <main>
     <h1>Publications</h1>
+
 <p style="font-size: 0.85em; line-height: 1.1;">
   Complete publication list in my profile on Google Scholar: 
   <a href="https://scholar.google.es/citations?user=2TwjuVgAAAAJ&hl=es" target="_blank" rel="noopener noreferrer">
@@ -203,8 +198,10 @@
 
 <h3>2018</h3>
     <div class="article">22. <strong>López-Angulo, J.</strong>, Swenson, N. G., Cavieres, L. A., et al., Escudero, A. (2018). Interactions between abiotic gradients determine functional and phylogenetic diversity patterns in Mediterranean-type climate mountains in the Andes. Journal of Vegetation Science, 29(2), 245–254.</div>
-    <div class="article">23. Luzuriaga, A. L., Sánchez, A. M., <strong>López-Angulo, J.</strong>, et al., Escudero, A. (2018). Habitat fragmentation determines diversity of annual plant communities at landscape and fine spatial scales. Basic and Applied Ecology, 29, 12–19.</div>
-    <div class="article">24. Santamaría, S., Sánchez, A. M., <strong>López-Angulo, J.</strong>, et al., Escudero, A. (2018). Landscape effects on pollination networks in Mediterranean gypsum islands. Plant Biology, 20, 184–194.</div>
+    <div class="article">23. <strong>López-Angulo, J.</strong>, Pescador, D., Sanchez, A., Mihoc, M., Cavieres, L. , Escudero, A. (2018). Determinants of high-mountain plant diversity in the Chilean Andes: From regional to local spatial scales. PLOS
+ONE. 13-7. ISSN 1932-6203.</div>
+    <div class="article">24. Luzuriaga, A. L., Sánchez, A. M., <strong>López-Angulo, J.</strong>, et al., Escudero, A. (2018). Habitat fragmentation determines diversity of annual plant communities at landscape and fine spatial scales. Basic and Applied Ecology, 29, 12–19.</div>
+    <div class="article">25. Santamaría, S., Sánchez, A. M., <strong>López-Angulo, J.</strong>, et al., Escudero, A. (2018). Landscape effects on pollination networks in Mediterranean gypsum islands. Plant Biology, 20, 184–194.</div>
 
 
 <h2>Other scientific contributions</h2>
@@ -221,6 +218,9 @@
       </li>
     </ul>
   </main>
+   <footer>
+    &copy; 2025 Jesús López Angulo. All rights reserved.
+  </footer>
 </body>
 </html>
 
