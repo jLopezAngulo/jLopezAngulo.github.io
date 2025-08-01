@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
 <head>
- <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jesús López Angulo - Home</title>
+  <meta charset="UTF-8" />
+  <title>Jesús López Angulo - Outreach </title>
   <style>
-     body {
+    body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #f4f4f4;
@@ -59,92 +56,140 @@
       font-size: 0.9rem;
       color: #777;
     }
+
     .presentacion {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap; /* Para que se adapte en móviles */
-}
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
 
-.foto-perfil {
-  width: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-}
+    @media (max-width: 600px) {
+      .presentacion {
+        flex-direction: column;
+        align-items: flex-start;
+      }
 
-.texto-presentacion {
-  flex: 1;
-  min-width: 200px;
-}
+      .presentacion img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+      }
+    }
+
+    .foto-perfil {
+      width: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .texto-presentacion {
+      flex: 1;
+      min-width: 200px;
+    }
+
     nav {
-  background: #333;
-  padding: 1rem;
+      background: #333;
+      padding: 1rem;
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Aquí empieza el CSS para el team grid 2 columnas */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .team-member {
+      text-align: center;
+    }
+
+    .team-member img {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  border-radius: 8px;
 }
 
-.menu {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-}
+    .team-member p {
+      margin-top: 10px;
+      font-size: 14px;
+    }
 
-.menu li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.menu li a:hover {
-  text-decoration: underline;
-}
+    .team-member small {
+      color: #666;
+      font-size: 12px;
+    }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Jesús López Angulo</h1>
     <p>Community Ecology</p>
   </header>
+
   <nav>
     <ul class="menu">
       <li><a href="home.html">Home</a></li>
       <li><a href="research.html">Research</a></li>
-      <li><a href="Publications.html"> Publications </a></li>
+      <li><a href="Publications.html">Publications</a></li>
       <li><a href="Databases.html">Databases</a></li>
       <li><a href="team.html">Team</a></li>
-      <li><a href="Outreach.html">Outreach </a></li>
-      <li><a href="press-release.html">Press room </a></li>
-      <li><a href="index.html">Contact</a></li>
+      <li><a href="Outreach.html">Outreach</a></li>
+      <li><a href="press-release.html">Press room</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
+<section id="scroll-banner" style="width: 100%; height: 60vh; overflow: hidden; position: relative;">
+  <img src="images/web/Parcela.jpg" alt="Banner"
+     style="width: 100%; height: 120%; position: absolute; top: 0; left: 0; object-fit: cover; z-index: 0;">
+</section>
+  
   <main>
     <div class="presentacion">
-  <img src="images/foto.jpeg" alt="Foto de perfil" class="foto-perfil">
-  <div class="texto-presentacion">
-    <h2>Contact</h2>
-    <div style="margin-bottom: 2rem;">
-  <p style="font-size: 1.4rem; font-weight: bold;">
-    Jesús López Angulo
-  </p>
-  <p style="font-size: 1.2rem;">
-     Postdoctoral researcher at University Rey Juan Carlos and Global Change Research Institute.
-  </p>
-  
-    <div class="contact">
-      <p>Email: <a href="mailto:jesus.lopez.angulo@urjc.es">jesus.lopez.angulo@urjc.es</a></p>
-      <p>GitHub: <a href="https://github.com/jLopezAngulo" target="_blank">github.com/jLopezAngulo</a></p>
-      <p>Twitter: <a href="https://twitter.com/JesusLopAng" target="_blank">@JesusLopAng</a></p>
-    </div>
+      <img src="images/foto.jpeg" alt="Foto de perfil" class="foto-perfil">
+      <div class="texto-presentacion">
+        <h2>Contact</h2>
+        <p style="font-size: 1.4rem; font-weight: bold;">Jesús López Angulo</p>
+        <p style="font-size: 1.2rem;">
+          Postdoctoral researcher at Universidad Rey Juan Carlos (URJC) and Instituto de Investigación en Cambio Global (IICG).
+        </p>
+        <div class="contacto">
+          <p>Email: <a href="mailto:jesus.lopez.angulo@urjc.es">jesus.lopez.angulo@urjc.es</a></p>
+          <p>GitHub: <a href="https://github.com/jLopezAngulo" target="_blank">github.com/jLopezAngulo</a></p>
+          <p>Twitter: <a href="https://twitter.com/JesusLopAng" target="_blank">@JesusLopAng</a></p>
+          <p>Dirección: Despacho 203, Departamental II, Universidad Rey Juan Carlos,<br>
+          Tulipán s/n, 28933 Móstoles, España</p>
+        </div>
       </div>
+    </div>
   </main>
 
- 
-
-</body>
- <footer>
+  <footer>
     &copy; 2025 Jesús López Angulo. All rights reserved.
   </footer>
+</body>
 </html>
-

@@ -193,13 +193,17 @@
     <!-- Aquí va todo lo que trabajamos antes -->
   </section>
 
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <div class="contact">
-      <p>Email: <a href="mailto:jesus.lopez.angulo@urjc.es">jesus.lopez.angulo@urjc.es</a></p>
-      <p>GitHub: <a href="https://github.com/jLopezAngulo" target="_blank">github.com/jLopezAngulo</a></p>
-      <p>Twitter: <a href="https://twitter.com/JesusLopAng" target="_blank">@JesusLopAng</a></p>
-    </div>
+ 
+    <section id="contacto">
+  <h2>Contacto</h2>
+  <div class="contacto">
+    <p>Dirección: Despacho 203, Departamental II, Universidad Rey Juan Carlos,<br>
+    Tulipán s/n, 28933 Móstoles, España</p>
+    <p>Email: <a href="mailto:jesus.lopez.angulo@urjc.es">jesus.lopez.angulo@urjc.es</a></p>
+    <p>GitHub: <a href="https://github.com/jLopezAngulo" target="_blank">github.com/jLopezAngulo</a></p>
+    <p>Twitter: <a href="https://twitter.com/JesusLopAng" target="_blank">@JesusLopAng</a></p>
+  </div>
+</section>
   </main>
 </body>
  <footer>
