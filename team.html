@@ -142,6 +142,20 @@
       color: #666;
       font-size: 12px;
     }
+    .banner {
+    width: 100%;
+    height: 60vh;
+    background-image: url('images/web/DSC_9464.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  @media (max-width: 768px) {
+    .banner {
+      background-attachment: scroll;
+    }
+  }
   </style>
 </head>
 
@@ -166,7 +180,7 @@
   <section id="scroll-banner" style="width: 100%; height: 60vh; overflow: hidden; position: relative;">
   <img src="images/web/Panorama_sin_título3.JPG" alt="Banner"
      style="width: 100%; height: 120%; position: absolute; top: 0; left: 0; object-fit: cover; z-index: 0;">
-</section>
+</section><section class="banner"></section>
   <main>
   <h1>Research Team</h1>
   <div class="team-grid">
@@ -199,7 +213,7 @@
 
     <div class="team-member">
       <img src="images/team/Sandra Hernández García (Technician 2022).jpg" alt="Sandra Hernández">
-      <p>Sandra Hernández<br><small>Technician 2022</small></p>
+      <p>Sandra Hernández García<br><small>Technician 2022</small></p>
     </div>
     <div class="team-member">
       <img src="images/team/Gonzalo Díez Blázquez (Technician 2021).jpeg" alt="Gonzalo Díez Blázquez">
