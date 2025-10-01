@@ -187,11 +187,11 @@
     <li><a href="#publicaciones">Publicaciones</a></li>
     <li><a href="#proyectos">Proyectos</a></li>
     <li><a href="#divulgacion">Divulgación</a></li>
-    <li><a href="#contacto">Contacto</a></li>
+    <li><a href="Contact.html">Contact</a></li>
   </ul>
 </nav>
   <main>
-   <main>
+  
   <section id="publicaciones">
     <h2>Publicaciones</h2>
     <!-- contenido -->
