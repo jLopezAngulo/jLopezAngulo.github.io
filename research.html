@@ -1,6 +1,12 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <title>Jesús López Angulo - Outreach </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jesús López Angulo - Research</title>
+
   <style>
     body {
       margin: 0;
@@ -25,70 +31,6 @@
       margin: 0.5rem 0 0;
     }
 
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      background: white;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .contacto {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    .contacto a {
-      color: #0077cc;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .contacto a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #777;
-    }
-
-    .presentacion {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-      margin-bottom: 2rem;
-      flex-wrap: wrap;
-    }
-
-    @media (max-width: 600px) {
-      .presentacion {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .presentacion img {
-        width: 100%;
-        max-width: 300px;
-        height: auto;
-      }
-    }
-
-    .foto-perfil {
-      width: 180px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-
-    .texto-presentacion {
-      flex: 1;
-      min-width: 200px;
-    }
-
     nav {
       background: #333;
       padding: 1rem;
@@ -101,6 +43,7 @@
       gap: 2rem;
       margin: 0;
       padding: 0;
+      flex-wrap: wrap;
     }
 
     .menu li a {
@@ -113,128 +56,261 @@
       text-decoration: underline;
     }
 
-    /* Aquí empieza el CSS para el team grid 2 columnas */
-    .team-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      max-width: 600px;
-      margin: 0 auto;
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
-    .team-member {
-      text-align: center;
-    }
-
-    .team-member img {
-  width: 100%;
-  max-width: 120px;
-  height: auto;
-  border-radius: 8px;
-}
-
-    .team-member p {
-      margin-top: 10px;
-      font-size: 14px;
-    }
-
-    .team-member small {
-      color: #666;
-      font-size: 12px;
-    }
-  
-  .banner {
-    width: 100%;
-    height: 60vh;
-    background-image: url('images/web/DSC_9464.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
-
-  @media (max-width: 768px) {
     .banner {
-      background-attachment: scroll;
+      width: 100%;
+      height: 60vh;
+      background-image: url('images/web/DSC_9464.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
     }
-  }
-</style>
 
+    .project-entry {
+      display: flex;
+      align-items: flex-start;
+      gap: 25px;
+      margin-bottom: 3rem;
+    }
+
+    .project-entry img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 6px;
+      flex-shrink: 0;
+    }
+
+    .project-text {
+      flex: 1;
+    }
+
+    .project-text h3 {
+      margin-top: 0;
+    }
+
+    .project-funding {
+      font-size: 0.85em;
+      line-height: 1.5;
+      color: #555;
+      margin-top: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 768px) {
+      .banner {
+        background-attachment: scroll;
+      }
+
+      .project-entry {
+        flex-direction: column;
+      }
+
+      .project-entry img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+      }
+
+      main {
+        margin: 1rem;
+        padding: 1.5rem;
+      }
+    }
+  </style>
 </head>
 
-
 <body>
+
   <header>
     <h1>Jesús López Angulo</h1>
     <p>Community Ecology</p>
   </header>
+
   <nav>
     <ul class="menu">
       <li><a href="home.html">Home</a></li>
       <li><a href="research.html">Research</a></li>
-      <li><a href="Publications.html"> Publications </a></li>
+      <li><a href="Publications.html">Publications</a></li>
       <li><a href="Databases.html">Databases</a></li>
       <li><a href="team.html">Team</a></li>
-      <li><a href="Outreach.html">Outreach </a></li>
-      <li><a href="press-release.html">Press room </a></li>
+      <li><a href="Outreach.html">Outreach</a></li>
+      <li><a href="press-release.html">Press room</a></li>
       <li><a href="index.html">Contact</a></li>
     </ul>
   </nav>
-<section id="scroll-banner" style="width: 100%; height: 60vh; overflow: hidden; position: relative;">
-  <img src="images/web/dsc_8727.jpg" alt="Banner"
-     style="width: 100%; height: 120%; position: absolute; top: 0; left: 0; object-fit: cover; z-index: 0;">
 
-<section class="banner"></section>
-</section>
+  <section id="scroll-banner" style="width: 100%; height: 60vh; overflow: hidden; position: relative;">
+    <img src="images/web/dsc_8727.jpg" alt="Research landscape"
+      style="width: 100%; height: 120%; position: absolute; top: 0; left: 0; object-fit: cover; z-index: 0;">
+    <section class="banner"></section>
+  </section>
+
   <main>
-   <h2>Research Lines</h2>
 
-<div style="display: flex; align-items: flex-start; margin-bottom: 2rem;">
-  <img src="images/project/impact_sports2.png" alt="Guadarrama" style="width: 200px; height: 200px; margin-right: 20px;">
-  <div>
-     <h3 style="margin-top: 0;">1. Impacts of Sporting Activities on Mountain Ecosystems</h3>
-    <p>
-      One of the primary research lines focuses on evaluating the impacts of sporting activities on high-mountain ecosystems, which are considered among the most vulnerable to climate change. Preliminary results from the ECORUN project reveal that sporting activities, particularly trail running, generate significant impacts outside designated trails in several studied national parks. These activities especially affect high-mountain plants. The objective of this line is, on one hand, to quantify the impact of these activities on the biodiversity and functionality of mountain ecosystems, identifying the most vulnerable species, and on the other hand, to develop strategies to support the sustainable and ecological management of recreational activities in protected areas. This research is expected to contribute to the implementation of management measures that balance ecosystem conservation with recreational use.
-    <p style="font-size: 0.85em; line-height: 1.1;">
-  Funding: <em>ECORUN – Tracking RUNning’s impact on alpine ECOsystems in the Digital Era</em><br>
-  Instituto de Investigación en Cambio Global (IICG-URJC). 01/01/2025 – 31/12/2025. 3.700€.<br>
-  PI: Jesús López-Angulo (University Rey Juan Carlos).
-</p>
-  </div>
-</div>
+    <h2>Research Lines</h2>
 
-<div style="display: flex; align-items: flex-start; margin-bottom: 2rem;">
-  <img src="images/project/Agroecosystems.png" alt="Crop diversity experiment" style="width: 200px; height: 200px; margin-right: 20px;">
-  <div>
-     <h3 style="margin-top: 0;">2. Ecological and Evolutionary Mechanisms Driving Benefits in Diversified Agroecosystems</h3>
-    <p>
-      Another research line seeks to understand the mechanisms underlying the potential of species mixtures to enhance ecosystem services, such as increased productivity and adaptation to climate change. Our previous studies have demonstrated that species mixtures can increase ecosystem resilience to global change; however, the ecological and evolutionary processes responsible for these patterns remain poorly understood. I am currently collaborating with Professor Christian Schöb on a proposal for a national competitive call to evaluate the role of genetic adaptation and phenotypic plasticity in resource partitioning, often observed in species interactions within intercropping systems. The results will significantly contribute to identifying sustainable and climate-resilient agricultural solutions by developing adaptive cultivation practices and promoting agricultural biodiversity while providing key scientific insights to guide future agricultural decisions and policies.
-     <p style="font-size: 0.85em; line-height: 1.1;">
-    Funding: <em>The impact of plant–plant coevolution in crop mixtures on the stability and resilience of an agroecosystem</em><br>
-  Swiss National Science Foundation (SNSF), 01/07/2021 – 30/06/2023. 789.866 CHF ≈ 850.000€  <br>
-  CoIPs: Christian Schob and Jesús López-Angulo (ETH Zurich)</p>
-  </div>
-</div>
+    <!-- 1. FORECO -->
 
-<div style="display: flex; align-items: flex-start; margin-bottom: 2rem;">
-  <img src="images/project/Reforestation.jpg" alt="Pinus sylvestris forest" style="width: 200px; height: 200px; margin-right: 20px;">
-  <div>
-     <h3 style="margin-top: 0;">3. Evaluating the Success of Forest Reforestation Efforts</h3>
-    <p>
-      The third research line focuses on assessing the success of reforestation efforts carried out over the past 70 years in Castilla-La Mancha and the Community of Madrid, comparing these reforested areas with mature reference forests. Currently, a comprehensive analysis of biological diversity and ecosystem functionality indicators is underway to identify the key factors determining the success of these interventions. In this regard, my intention is to delve deeper into the characteristics of reforestations that promote soil resilience and functionality, leveraging my previous experience in plant-soil interactions. The objective is to generate recommendations for decision-making in the planning and management of forest biodiversity, promoting strategies that maximize the resilience and ecosystem benefits of reforested forests. This research is expected to have a direct impact on improving forest management policies in the region.
-   <p style="font-size: 0.85em; line-height: 1.1;">
-  Funding: <em>– BIOFOREST: Biodiversidad y funcionamiento ecosistémico en restauraciones forestales: un análisis a gran escala espacial y temporal.</em><br>
-  Fundación Biodiversidad. 03/07/2022 – 31/12/2025. 352.525€<br>
-  IP: Ana I. García Cervigón (Universidad Rey Juan Carlos).<br>
-  
-– ITEREST: Diversidad de interacciones bióticas y su papel en el funcionamiento ecosistémico de las restauraciones forestales.
-AGENCIA ESTATAL DE INVESTIGACION. 01/12/2022-31/07/2025. 255.300 €.
-IP: Ana I. García Cervigón e Isabel Martínez (Universidad Rey Juan Carlos). 
-</p> </p>
-  </div>
-</div>
-</main>
-</body>
- <footer>
-    &copy; 2025 Jesús López Angulo. All rights reserved.
+    <div class="project-entry">
+      <img src="images/project/coexistance.JPG" alt="Quercus and Pinus coexistence">
+
+      <div class="project-text">
+        <h3>1. Ecological and Evolutionary Drivers of Quercus–Pinus Coexistence: A Multiscale Approach</h3>
+
+        <p>
+          FORECO aims to investigate the ecological and evolutionary factors that enable
+          the coexistence of Quercus and Pinus species and their role in enhancing forest
+          resilience to global change. Combining global datasets, evolutionary analyses,
+          fieldwork and experimental approaches, the project examines patterns of
+          co-occurrence, complementary functional strategies and processes of
+          co-adaptation between species. It also evaluates the temporal stability and
+          drought resilience of mixed forests. FORECO will provide a solid scientific
+          basis for adaptive forest management, promoting mixed forests that are more
+          productive and stable under climate change.
+        </p>
+
+        <p class="project-funding">
+            <strong>Funding:</strong> <em>Ecological and evolutionary drivers of Quercus–Pinus coexistence:
+          a multiscale approach (FORECO)</em><br>
+          Comunidad de Madrid, 2026–2031. 515.661,41 €<br>
+          <strong>PI</strong>:<strong>  Jesús López Angulo </strong>(Universidad Rey Juan Carlos).
+          <br>
+          
+        </p>
+      </div>
+    </div>
+
+    <!-- 2. ECORUN -->
+
+    <div class="project-entry">
+      <img src="images/project/impact_sports2.png" alt="Impacts of sporting activities on mountain ecosystems">
+
+      <div class="project-text">
+        <h3>2. Impacts of Sporting Activities on Mountain Ecosystems</h3>
+
+        <p>
+          One of the primary research lines focuses on evaluating the impacts of sporting
+          activities on high-mountain ecosystems, which are considered among the most
+          vulnerable to climate change. Preliminary results from the ECORUN project reveal
+          that sporting activities, particularly trail running, generate significant
+          impacts outside designated trails in several studied national parks. These
+          activities especially affect high-mountain plants. The objective of this line
+          is, on one hand, to quantify the impact of these activities on the biodiversity
+          and functionality of mountain ecosystems, identifying the most vulnerable
+          species, and on the other hand, to develop strategies to support the sustainable
+          and ecological management of recreational activities in protected areas. This
+          research is expected to contribute to the implementation of management measures
+          that balance ecosystem conservation with recreational use.
+        </p>
+
+        <p class="project-funding">
+          <strong>Funding:</strong>
+          <em>ECORUN – Tracking RUNning’s impact on alpine ECOsystems in the Digital Era</em><br>
+          Instituto de Investigación en Cambio Global (IICG-URJC).
+          01/01/2025 – 31/12/2025. €3,700.<br>
+          <strong>PI</strong>:<strong>  Jesús López Angulo </strong> (Universidad Rey Juan Carlos).
+        </p>
+      </div>
+    </div>
+
+    <!-- 3. AGROECOSYSTEMS -->
+
+    <div class="project-entry">
+      <img src="images/project/Agroecosystems.png" alt="Crop diversity experiment">
+
+      <div class="project-text">
+        <h3>3. Ecological and Evolutionary Mechanisms Driving Benefits in Diversified Agroecosystems</h3>
+
+        <p>
+          Another research line seeks to understand the mechanisms underlying the potential
+          of species mixtures to enhance ecosystem services, such as increased productivity
+          and adaptation to climate change. Our previous studies have demonstrated that
+          species mixtures can increase ecosystem resilience to global change; however,
+          the ecological and evolutionary processes responsible for these patterns remain
+          poorly understood. I am currently collaborating with Professor Christian Schöb
+          on research evaluating the role of genetic adaptation and phenotypic plasticity
+          in resource partitioning, often observed in species interactions within
+          intercropping systems. The results will contribute to identifying sustainable
+          and climate-resilient agricultural solutions by developing adaptive cultivation
+          practices and promoting agricultural biodiversity, while providing key
+          scientific insights to guide future agricultural decisions and policies.
+        </p>
+
+        <p class="project-funding">
+          <strong>Funding:</strong>
+          <em>The impact of plant–plant coevolution in crop mixtures on the stability and
+          resilience of an agroecosystem</em><br>
+          Swiss National Science Foundation (SNSF), 01/07/2021 – 30/06/2023.
+          CHF 789,866 (approximately €850,000).<br>
+          <strong>Co-PIs:</strong> Christian Schöb and <strong>PI: Jesús López Angulo </strong>  (ETH Zurich).
+        </p>
+      </div>
+    </div>
+
+    <!-- 4. FOREST RESTORATION -->
+
+    <div class="project-entry">
+      <img src="images/project/Reforestation.jpg" alt="Pinus sylvestris forest">
+
+      <div class="project-text">
+        <h3>4. Evaluating the Success of Forest Reforestation Efforts</h3>
+
+        <p>
+          This research line focuses on assessing the success of reforestation efforts
+          carried out over the past 70 years in Castilla-La Mancha and the Community of
+          Madrid, comparing these reforested areas with mature reference forests.
+          Currently, a comprehensive analysis of biological diversity and ecosystem
+          functionality indicators is underway to identify the key factors determining
+          the success of these interventions. In this regard, my intention is to delve
+          deeper into the characteristics of reforestations that promote soil resilience
+          and functionality, leveraging my previous experience in plant–soil interactions.
+          The objective is to generate recommendations for decision-making in the planning
+          and management of forest biodiversity, promoting strategies that maximize the
+          resilience and ecosystem benefits of reforested forests. This research is
+          expected to have a direct impact on improving forest management policies in
+          the region.
+        </p>
+
+        <p class="project-funding">
+          <strong>Funding:</strong><br>
+
+          <em>BIOFOREST: Biodiversidad y funcionamiento ecosistémico en restauraciones
+          forestales: un análisis a gran escala espacial y temporal.</em><br>
+          Fundación Biodiversidad. 03/07/2022 – 31/12/2025. €352,525.<br>
+          <strong>PI:</strong> Ana I. García Cervigón (Universidad Rey Juan Carlos).
+          <br><br>
+
+          <em>INTETRESTs: Diversidad de interacciones bióticas y su papel en el funcionamiento
+          ecosistémico de las restauraciones forestales.</em><br>
+          Agencia Estatal de Investigación. 01/12/2022 – 31/07/2025. €255,300.<br>
+          <strong>PIs:</strong> Ana I. García Cervigón and Isabel Martínez
+          (Universidad Rey Juan Carlos).
+        </p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Jesús López Angulo. All rights reserved.
   </footer>
+
+</body>
 </html>
+
+
