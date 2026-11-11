@@ -1,213 +1,650 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <title>Jesús López Angulo - Outreach </title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #333;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesús López Angulo - People</title>
 
-    header {
-      background: #222;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
+header {
+    background: #222;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
 
-    header p {
-      margin: 0.5rem 0 0;
-    }
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
 
+header p {
+    margin: 0.5rem 0 0;
+}
+
+nav {
+    background: #333;
+    padding: 1rem;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+#scroll-banner {
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#scroll-banner img {
+    width: 100%;
+    height: 120%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+main {
+    max-width: 950px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.intro {
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 2px solid #e5e5e5;
+}
+
+.subsection-title {
+    font-size: 1.25rem;
+    color: #555;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.current-grid,
+.former-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 2rem;
+}
+
+.member-card,
+.student-card,
+.former-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 18px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 3px solid #0077cc;
+}
+
+.member-card img,
+.former-card img {
+    width: 95px;
+    height: 105px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.member-info,
+.former-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.member-info h3,
+.former-info h3,
+.student-card h3 {
+    font-size: 16px;
+    margin: 3px 0 7px;
+}
+
+.member-category {
+    color: #0077cc;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    margin-bottom: 7px;
+}
+
+.member-info p,
+.former-info p,
+.student-card p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 5px 0;
+}
+
+.member-info small,
+.former-info small,
+.student-card small {
+    color: #666;
+}
+
+.student-card {
+    display: block;
+}
+
+.project-info {
+    border-top: 1px solid #ddd;
+    padding-top: 8px;
+    margin-top: 10px;
+}
+
+.project-info p {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.project-info a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.project-info a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+@media (max-width: 768px) {
     main {
-      max-width: 800px;
-      margin: 2rem auto;
-      background: white;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        margin: 1rem;
+        padding: 1.5rem;
     }
 
-    .contacto {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
+    .current-grid,
+    .former-grid {
+        grid-template-columns: 1fr;
     }
 
-    .contacto a {
-      color: #0077cc;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .contacto a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #777;
-    }
-
-    .presentacion {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-      margin-bottom: 2rem;
-      flex-wrap: wrap;
-    }
-
-    @media (max-width: 600px) {
-      .presentacion {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .presentacion img {
-        width: 100%;
-        max-width: 300px;
-        height: auto;
-      }
-    }
-
-    .foto-perfil {
-      width: 180px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-
-    .texto-presentacion {
-      flex: 1;
-      min-width: 200px;
-    }
-
-    nav {
-      background: #333;
-      padding: 1rem;
+    #scroll-banner {
+        height: 40vh;
     }
 
     .menu {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin: 0;
-      padding: 0;
+        gap: 1rem;
     }
-
-    .menu li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .menu li a:hover {
-      text-decoration: underline;
-    }
-
-    /* Aquí empieza el CSS para el team grid 2 columnas */
-    .team-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    .team-member {
-      text-align: center;
-    }
-
-    .team-member img {
-  width: 100%;
-  max-width: 120px;
-  height: auto;
-  border-radius: 8px;
 }
 
-    .team-member p {
-      margin-top: 10px;
-      font-size: 14px;
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
     }
 
-    .team-member small {
-      color: #666;
-      font-size: 12px;
+    main {
+        padding: 1.2rem;
     }
-    
-  @media (max-width: 768px) {
-    .banner {
-      background-attachment: scroll;
+
+    .member-card img,
+    .former-card img {
+        width: 75px;
+        height: 85px;
     }
-  }
-  </style>
+}
+</style>
 </head>
 
 
 <body>
-  <header>
+
+<header>
     <h1>Jesús López Angulo</h1>
     <p>Community Ecology</p>
-  </header>
-  <nav>
+</header>
+
+<nav>
     <ul class="menu">
-      <li><a href="home.html">Home</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="Publications.html"> Publications </a></li>
-      <li><a href="Databases.html">Databases</a></li>
-      <li><a href="team.html">Team</a></li>
-      <li><a href="Outreach.html">Outreach </a></li>
-      <li><a href="press-release.html">Press room </a></li>
-      <li><a href="index.html">Contact</a></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="Publications.html">Publications</a></li>
+        <li><a href="Databases.html">Databases</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="Outreach.html">Outreach</a></li>
+        <li><a href="press-release.html">Press room</a></li>
+        <li><a href="index.html">Contact</a></li>
     </ul>
-  </nav>
-  <section id="scroll-banner" style="width: 100%; height: 60vh; overflow: hidden; position: relative;">
-  <img src="images/web/Panorama_sin_título3.JPG" alt="Banner"
-     style="width: 100%; height: 120%; position: absolute; top: 0; left: 0; object-fit: cover; z-index: 0;">
-</section><section class="banner"></section>
-  <main>
-  <h1>Research Team</h1>
-  <div class="team-grid">
-    
-  
-    <div class="team-member">
-      <img src="images/team/Zeinab Matinzadeh (Postdoctoral researcher 2025).jpg" alt="Zeinab Matinzadeh">
-      <p>Zeinab Matinzadeh<br><small>Postdoctoral researcher 2025-Present</small></p>
-    </div>
-    <div class="team-member">
-      <img src="images/team/Alejandro Muñoz-Escribano (Assistant researcher 2022-2023).jpg" alt="Alejandro Muñoz-Escribano">
-      <p>Alejandro Muñoz-Escribano<br><small>Assistant researcher 2022–2023</small></p>
+</nav>
+
+<section id="scroll-banner">
+    <img src="images/web/Panorama_sin_título3.JPG"
+         alt="Research landscape">
+</section>
+
+
+<main>
+
+<h1>People</h1>
+
+<p class="intro">
+Our research group brings together researchers, technicians
+and students working on community ecology, biodiversity,
+agroecosystems and global change.
+</p>
+
+
+<!-- ===================================== -->
+<!-- CURRENT MEMBERS -->
+<!-- ===================================== -->
+
+<h2 class="section-title">Current Members</h2>
+
+
+<h3 class="subsection-title">Postdoctoral Researchers</h3>
+
+<div class="current-grid">
+
+    <div class="member-card">
+        <img src="images/team/Zeinab Matinzadeh (Postdoctoral researcher 2025).jpg"
+             alt="Zeinab Matinzadeh">
+
+        <div class="member-info">
+            <h3>Zeinab Matinzadeh</h3>
+            <p><small>2025–Present</small></p>
+            <p>
+                <strong>Research project:</strong>
+                What drives the assembly of plant communities on extreme soils?
+                A global analysis of gypsum plant communities.
+            </p>
+        </div>
     </div>
 
-    <div class="team-member">
-      <img src="images/team/Mario Sánchez Lozano (Technician 2022).jpg" alt="Mario Sánchez Lozano">
-      <p>Mario Sánchez Lozano<br><small>Technician 2022</small></p>
-    </div>
-    <div class="team-member">
-      <img src="images/team/Rubén García Sánchez (Technician 2022).jpeg" alt="Rubén García Sánchez">
-      <p>Rubén García Sánchez<br><small>Technician 2022</small></p>
+</div>
+
+
+<h3 class="subsection-title">PhD Researchers</h3>
+
+<div class="current-grid">
+
+    <div class="student-card">
+        <h3>Claudia Enríquez Rodríguez</h3>
+        <p><small>2026–Present</small></p>
+        <p>
+            <strong>PhD thesis:</strong>
+            Ecological and evolutionary drivers of Quercus–Pinus coexistence:
+            a multiscale approach.
+        </p>
+        <p>
+            <strong>Supervisor:</strong>
+            Jesús López Angulo
+        </p>
     </div>
 
-    <div class="team-member">
-      <img src="images/team/Sandra Hernández (Technician 2022).jpg" alt="Sandra Hernández">
-      <p>Sandra Hernández García<br><small>Technician 2022</small></p>
+    <div class="student-card">
+        <h3>Virginia de la Torre Pacheco</h3>
+        <p><small>2026–Present</small></p>
+        <p>
+            <strong>PhD thesis:</strong>
+            Evaluación del efecto del manejo de sistemas agronómicos
+            sobre la biodiversidad animal.
+        </p>
+        <p>
+            <strong>Supervisors:</strong>
+            Jesús López Angulo and Sandra Goded
+        </p>
     </div>
-    <div class="team-member">
-      <img src="images/team/Gonzalo Díez Blázquez (Technician 2021).jpeg" alt="Gonzalo Díez Blázquez">
-      <p>Gonzalo Díez Blázquez<br><small>Technician 2021</small></p>
+
+    <div class="student-card">
+        <h3>Juan Javier Román Crespo</h3>
+        <p><small>2026–Present</small></p>
+        <p>
+            <strong>PhD thesis:</strong>
+            Efectos de la transformación del paisaje forestal sobre
+            la diversidad de las comunidades de murciélagos
+            en la Amazonía ecuatoriana.
+        </p>
+        <p>
+            <strong>Supervisor:</strong>
+            Jesús López Angulo
+        </p>
     </div>
-  </div>
+
+</div>
+
+
+<h3 class="subsection-title">Master's Students</h3>
+
+<div class="current-grid">
+
+    <div class="student-card">
+        <h3>Hifza Bibi</h3>
+        <p><small>2026–Present</small></p>
+        <p>Erasmus Mundus Joint Master's Student.</p>
+        <p>
+            <strong>Programme:</strong>
+            Global Change Ecology and Biodiversity Management (GLOBE).
+        </p>
+        <p>
+            <strong>Master's thesis:</strong>
+            Evaluating non-invasive methodologies for monitoring
+            cryptic micromammals using camera trapping and hair traps.
+        </p>
+        <p>
+            <strong>Supervisors:</strong>
+            Jesús López Angulo, Sandra Goded Millán and
+            Virginia de la Torre Pacheco.
+        </p>
+    </div>
+
+</div>
+
+
+<h3 class="subsection-title">Bachelor's Students</h3>
+
+<div class="current-grid">
+
+    <div class="student-card">
+        <h3>Laura Pedrero Villar</h3>
+        <p><small>2026–Present</small></p>
+        <p><strong>Degree:</strong> Environmental Sciences</p>
+        <p>
+            <strong>Bachelor's thesis:</strong>
+            Effects of forest patches within agricultural matrices
+            on bat diversity.
+        </p>
+        <p>
+            <strong>Co-supervisor:</strong>
+            Virginia de la Torre
+        </p>
+    </div>
+
+    <div class="student-card">
+        <h3>Alejandro Sánchez Gallego</h3>
+        <p><small>2026–Present</small></p>
+        <p><strong>Degree:</strong> Biology</p>
+        <p>
+            <strong>Bachelor's thesis:</strong>
+            Influence of crop diversification on seed nutritional composition.
+        </p>
+    </div>
+
+</div>
+
+
+
+<!-- ===================================== -->
+<!-- FORMER MEMBERS -->
+<!-- ===================================== -->
+
+<h2 class="section-title">Former Members</h2>
+
+
+<h3 class="subsection-title">Assistant Researchers</h3>
+
+<div class="former-grid">
+
+    <div class="former-card">
+        <img src="images/team/Alejandro Muñoz-Escribano (Assistant researcher 2022-2023).jpg"
+             alt="Alejandro Muñoz-Escribano">
+
+        <div class="former-info">
+            <h3>Alejandro Muñoz-Escribano</h3>
+            <p><small>2022–2023</small></p>
+
+            <p>
+                <strong>Minor thesis:</strong>
+                Seeds adapted to mixed cropping increase yield
+                and drought resistance of cereal-legume mixtures.
+            </p>
+
+            <p><small>2023 · Universidad Rey Juan Carlos</small></p>
+
+            <div class="project-info">
+                <p><strong>Related publication:</strong></p>
+                <p>
+                    Muñoz-Escribano A, Schöb C, López-Angulo J. (2025).
+                    Seeds Adapted to Mixed Cropping Increase Yield and
+                    Drought Resistance of Cereal–Legume Mixtures.
+                    <em>Journal of Sustainable Agriculture and Environment</em>,
+                    4, e70039.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- MASTER'S THESES -->
+
+<h3 class="subsection-title">Master's Theses</h3>
+
+<div class="former-grid">
+
+    <div class="student-card">
+        <h3>María Mateo Gaitán</h3>
+        <p><small>2019</small></p>
+        <p>
+            <strong>Master's thesis:</strong>
+            Beta diversity of pollination networks reveals effects
+            of fragmentation at patch scale but not at landscape scale.
+        </p>
+        <p><strong>Co-supervisor:</strong> Adrián Escudero</p>
+        <p><strong>Grade:</strong> 7.7</p>
+        <p><small>Universidad Rey Juan Carlos</small></p>
+    </div>
+
+</div>
+
+
+<!-- BACHELOR'S THESES -->
+
+<h3 class="subsection-title">Bachelor's Theses</h3>
+
+<div class="former-grid">
+
+    <div class="student-card">
+        <h3>Nicolás Cejuela Martín</h3>
+        <p><small>2026</small></p>
+        <p>
+            <strong>Bachelor's thesis:</strong>
+            Evaluación del impacto de las actividades deportivas
+            en la vegetación alpina.
+        </p>
+        <p>
+            <strong>Supervisor:</strong>
+            Jesús López Angulo
+        </p>
+        <p>
+            <small>
+                Experimental Sciences · Universidad Rey Juan Carlos
+            </small>
+        </p>
+        <p>
+            <a href="https://hdl.handle.net/10115/477558" target="_blank">
+                University repository
+            </a>
+        </p>
+    </div>
+
+
+    <div class="student-card">
+        <h3>Santiago Cordones</h3>
+        <p><small>2025</small></p>
+        <p>
+            <strong>Bachelor's thesis:</strong>
+            Variation in forest structure and growth in mature
+            and reforested forests in the Serranía de Cuenca.
+        </p>
+        <p>
+            <strong>Co-supervisor:</strong>
+            Ana Isabel García-Cervigón Morales
+        </p>
+        <p><strong>Grade:</strong> 8</p>
+        <p>
+            <small>
+                Environmental Sciences · Universidad Rey Juan Carlos
+            </small>
+        </p>
+    </div>
+
+
+    <div class="student-card">
+        <h3>Rodrigo Jiménez Paniagua</h3>
+        <p><small>2020</small></p>
+        <p>
+            <strong>Bachelor's thesis:</strong>
+            Intraspecific variation in functional traits of
+            <em>Pinus sylvestris</em> along climatic gradients:
+            applications for restoration.
+        </p>
+        <p><strong>Co-supervisor:</strong> Adrián Escudero</p>
+        <p><strong>Grade:</strong> 7.5</p>
+        <p><small>Universidad Rey Juan Carlos</small></p>
+    </div>
+
+
+    <div class="student-card">
+        <h3>Ariadna Medina Belinchón</h3>
+        <p><small>2018</small></p>
+        <p>
+            <strong>Bachelor's thesis:</strong>
+            Environmental determinants of puma
+            (<em>Puma concolor</em>) home range across
+            its geographical distribution.
+        </p>
+        <p><strong>Co-supervisor:</strong> Emilio Virgós</p>
+        <p><strong>Grade:</strong> 9.3</p>
+        <p><small>Universidad Rey Juan Carlos</small></p>
+    </div>
+
+</div>
+
+
+<!-- RESEARCH INTERNSHIPS -->
+
+<h3 class="subsection-title">Research Internships</h3>
+
+<div class="former-grid">
+
+    <div class="student-card">
+        <h3>Markus Bittlingmaier</h3>
+        <p><small>2021 · University of Freiburg</small></p>
+        <p>
+            <strong>Research project:</strong>
+            Functional root trait responses to intercropping,
+            drought and population history.
+        </p>
+    </div>
+
+    <div class="student-card">
+        <h3>Gabriel Sagot</h3>
+        <p><small>2023 · University of Paris</small></p>
+        <p>
+            <strong>Research project:</strong>
+            Effects of plant diversity, seed history, and drought
+            on the impact of pests and diseases in a cropping system.
+        </p>
+    </div>
+
+</div>
+
+
+<!-- RESEARCH TECHNICIANS: LAST SECTION -->
+
+<h3 class="subsection-title">Research Technicians</h3>
+
+<div class="former-grid">
+
+    <div class="former-card">
+        <img src="images/team/Mario Sánchez Lozano (Technician 2022).jpg"
+             alt="Mario Sánchez Lozano">
+        <div class="former-info">
+            <h3>Mario Sánchez Lozano</h3>
+            <p><small>2022</small></p>
+            <p>Research Technician</p>
+        </div>
+    </div>
+
+    <div class="former-card">
+        <img src="images/team/Rubén García Sánchez (Technician 2022).jpeg"
+             alt="Rubén García Sánchez">
+        <div class="former-info">
+            <h3>Rubén García Sánchez</h3>
+            <p><small>2022</small></p>
+            <p>Research Technician</p>
+        </div>
+    </div>
+
+    <div class="former-card">
+        <img src="images/team/Sandra Hernández (Technician 2022).jpg"
+             alt="Sandra Hernández García">
+        <div class="former-info">
+            <h3>Sandra Hernández García</h3>
+            <p><small>2022</small></p>
+            <p>Research Technician</p>
+        </div>
+    </div>
+
+    <div class="former-card">
+        <img src="images/team/Gonzalo Díez Blázquez (Technician 2021).jpeg"
+             alt="Gonzalo Díez Blázquez">
+        <div class="former-info">
+            <h3>Gonzalo Díez Blázquez</h3>
+            <p><small>2021</small></p>
+            <p>Research Technician</p>
+        </div>
+    </div>
+
+</div>
+
 </main>
+
+
+<footer>
+    &copy; 2026 Jesús López Angulo. All rights reserved.
+</footer>
+
 </body>
- <footer>
-    &copy; 2025 Jesús López Angulo. All rights reserved.
-  </footer>
 </html>
